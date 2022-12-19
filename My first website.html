@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Website</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Showtime</button>
+
+
+
+<p id="demo"></p>
+<w1> The button above shows the time when clicked </w1>
+<h1 class="glow">-Made by Sanidhya</h1>
+</body>
+</html> 
+<style>
+body {
+  background-color: #010017;
+}
+button { 
+  background-color: blue;
+  box-shadow: 0 0 1em cyan;
+  color: cyan;
+  border: cyan 0.125em solid;
+  font-size: 20px;
+ }
+w1 { 
+  color: cyan;
+  padding: 60px;
+  text-align: center;
+  font-family: Cursive;
+  font-size: 22px;
+ }
+p { 
+  color: red;
+  text-align: center;
+  text-shadow:0 0 0.125 hsl(0 0% 100% / 0.6), 0 0 0.45em cyan;
+  font-size: 25px;
+  border: red 0.125em solid;
+ }
+h2 {
+  color: cyan;
+  text-align: center;
+  border: blue 0.125em solid;
+  border-radius: 0.25em;
+  box-shadow:  blue 0 0 3em 0;
+  text-shadow: 0 0 3em red;
+  font-family: cooper black;
+}
+h1 {
+  font-size:10px
+}
+.glow {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #030ffc, 0 0 20px #030ffc, 0 0 30px #008ae6, 0 0 40px #008ae6, 0 0 50px #008ae6, 0 0 60px #008ae6, 0 0 70px #008ae6;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #030ffc, 0 0 30px #4cf549, 0 0 40px #4cf549, 0 0 50px #4cf549, 0 0 60px #4cf549, 0 0 70px #4cf549, 0 0 80px #4cf549;
+  }
+}
+
+</style>
